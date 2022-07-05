@@ -18,7 +18,28 @@
    display: none;
   }
   .menu-dps ul a:hover{
-   background-color:bisque;
+   background-color:rgb(6, 184, 255);
  }
  /* FIN MENU RESPONSIVE */
+ .content{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 20% 10% 10% 10% ;
+  gap: 5px;
+}
+
+
+ .header{
+  grid-row:  2 / 3;
+  grid-column: 1 / 2 ;
+ }
+
+.carousel-container{
+  grid-row:  3 / 4;
+  grid-column: 1 / 2 ;
+}
+.header img{
+  height: 300px;
+}
+
  }

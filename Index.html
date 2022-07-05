@@ -1,49 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/reset.css">
-  <link rel="stylesheet" href="CSS/normalize.css">
-  <link rel="stylesheet" href="CSS/main.css">
-  <link rel="stylesheet" href="CSS/mediaQ.css">
-  <title>Portfolio</title>
-</head>
-<body>
-  <div class="content">
-  <nav class="menu-dps">
-      <a href="index.html" class="logo">Portfolios</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn"/>
-        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/skillbar.css">
+    <link rel="stylesheet" href="CSS/mediaQ.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="content">
+      <nav class="menu-dps">
+        <a href="index.html" class="logo">Portfolios</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="nav-icon"></span
+        ></label>
         <ul class="menu">
-          <li><a href="#Aboutme">Aboutme</a></li>
+          <li><a href="#Aboutme">About me</a></li>
           <li><a href="#Skills">Skills</a></li>
           <li><a href="#Works">Works</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
-  </nav>
-  <header class="header">
-    <figure>
-      <picture class="image-trans">
-        <source
-        media="(min-width: 700px)"
-        srcset="Images/Foto-web.gif"
-        >
-        <img
-          src="Images/Foto-movil.gif"
-          alt="a head carved out of wood"
-        >
-      </picture>
-    </figure>
-  </header>
-  
-  <main class="content-main">
+      </nav>
+      <header class="header">
+        <figure>
+          <picture class="image-trans">
+            <source media="(min-width: 700px)" srcset="Images/Foto-web.gif" />
+            <img src="Images/Foto-movil.gif" alt="a head carved out of wood" />
+          </picture>
+        </figure>
+      </header>
+      <main class="content-main">
+        <section class="carousel-container">
+          <div class="slides-carousel">
+            <div id="slide1"><img src="/Images/caro-1.jpg" alt="" /></div>
+            <div id="slide2">Anouncement 2</div>
+            <div id="slide3">Anouncement 3</div>
+            <div id="slide4">Anouncement 4</div>
+            <div id="slide5">Anouncement 5</div>
+          </div>
+          <div class="links-carousel">
+            <a class="carouseldot" href="#slide1"></a>
+            <a class="carouseldot" href="#slide2"></a>
+            <a class="carouseldot" href="#slide3"></a>
+            <a class="carouseldot" href="#slide4"></a>
+            <a class="carouseldot" href="#slide5"></a>
+          </div>
+        </section>
+        <div class="contenedor-skills">
+          <div class="imgskcontainer">
+            <div class="image-skill">
+              <img src="Images/Html.svg" alt="logo-html" />
+            </div>
+            <div class="skillcss">
+              <div class="textsk">HTML</div>
+              <span class="htmlsk"></span>
+            </div>
+          </div>
+          <div class="imgskcontainer">
+            <div class="image-skill">
+              <img src="Images/Css.svg" alt="logo-css" />
+            </div>
+            <div class="skillcss">
+              <div class="textsk">CSS</div>
+              <span class="csssk"></span>
+            </div>
+          </div>
+          <div class="imgskcontainer">
+            <div class="image-skill">
+              <img src="Images/Javascript.svg" alt="logo-html" />
+            </div>
+            <div class="skillcss">
+              <div class="textsk">JavaScript</div>
+              <span class="javask"></span>
+            </div>
+          </div>
+          <div class="imgskcontainer">
+            <div class="image-skill">
+              <img src="Images/Reacts.svg" alt="logo-react" />
+            </div>
+            <div class="skillcss">
+              <div class="textsk">React</div>
+              <span class="reactsk"></span>
+            </div>
+          </div>
+          <div class="imgskcontainer">
+            <div class="image-skill">
+              <img src="Images/Git.svg" alt="logo-html" />
+            </div>
+            <div class="skillcss">
+              <div class="textsk">Git</div>
+              <span class="gitsk"></span>
+            </div>
+          </div>
 
-  </main>
-  <footer>
-
-  </footer>
-</div>
-</body>
+         
+        
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
 </html>

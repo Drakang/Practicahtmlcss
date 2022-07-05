@@ -1,33 +1,25 @@
-
-a{
-color: black;
+a {
+  color: black;
 }
-content{
+.content {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 10px 20% 20% 20% 20%;
-
-}
-.header{
-margin-top: 1fr;
-grid-column: 1 / 2;
-grid-row: 2 / 3 ;
-}
-.header img{
-width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 
-.menu-dps{
-  grid-column: 1 / 2;
-  grid-row: 1 /2;
-  background-color: #0081CF;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+.header img {
+  width: 100%;
+}
+
+.menu-dps {
+  background-color: #0081cf;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   z-index: 3;
 }
-.menu-dps ul{
+.menu-dps ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -36,11 +28,11 @@ width: 100%;
 }
 .menu-dps li a {
   display: block;
-  padding:10px;
+  padding: 10px;
   border-right: 1px solid #aaa;
   text-decoration: none;
 }
-.menu-dps .logo{
+.menu-dps .logo {
   float: left;
   display: block;
   font-size: 2em;
@@ -48,66 +40,104 @@ width: 100%;
   text-decoration: none;
 }
 
-.menu-dps .menu{
+.menu-dps .menu {
   clear: both;
   max-height: 0;
-  transition:max-height 1s ease-out;
+  transition: max-height 1s ease-out;
 }
-.menu-dps .menu-icon{
+.menu-dps .menu-icon {
   padding: 28px 20px;
-  position:relative;
+  position: relative;
   float: right;
   cursor: pointer;
   user-select: none;
 }
-.menu-dps .menu-icon .nav-icon{
+.menu-dps .menu-icon .nav-icon {
   background-color: #aaa;
   display: block;
   height: 2px;
   width: 18px;
-  position:relative;
-  transition: background .1s ease-out;
+  position: relative;
+  transition: background 0.1s ease-out;
 }
-.menu-dps .menu-icon .nav-icon:before{
-  background:#333;
+.menu-dps .menu-icon .nav-icon:before {
+  background: #333;
   content: "";
   display: block;
   height: 100%;
   width: 100%;
   position: absolute;
-  transition: all .1s ease-out;
-  top:5px ;
+  transition: all 0.1s ease-out;
+  top: 5px;
 }
-.menu-dps .menu-icon .nav-icon:after{
-  background:#333;
+.menu-dps .menu-icon .nav-icon:after {
+  background: #333;
   content: "";
   display: block;
   height: 100%;
   width: 100%;
   position: absolute;
-  transition: all .1s ease-out;
-  top:-5px ;
+  transition: all 0.1s ease-out;
+  top: -5px;
 }
-.menu-dps .menu-btn{
+.menu-dps .menu-btn {
   display: none;
 }
 
-.menu-dps .menu-btn:checked ~ .menu{
+.menu-dps .menu-btn:checked ~ .menu {
   max-height: 200px;
 }
 
-.menu-dps .menu-btn:checked ~ .menu-icon .nav-icon{
-
-background: transparent;
-
+.menu-dps .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
 }
-.menu-dps .menu-btn:checked ~ .menu-icon .nav-icon:before{
-
-transform: rotate(-45deg);
-top:0;
-
+.menu-dps .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
 }
-.menu-dps .menu-btn:checked ~ .menu-icon .nav-icon:after{
+.menu-dps .menu-btn:checked ~ .menu-icon .nav-icon:after {
   transform: rotate(45deg);
   top: 0;
 }
+.carousel-container {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  margin-top: 5fr;
+}
+
+.links-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.carouseldot {
+  background-color: black;
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-radius: 50%;
+  margin: 5px;
+}
+.slides-carousel {
+  width: 100vw;
+  height: 30vh;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.slides-carousel > div {
+  width: 100%;
+  background-color: rgb(68, 68, 68);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slides-carousel img {
+  width: 100%;
+  overflow: hidden;
+}
+/*  */
+
