@@ -1,0 +1,24 @@
+@media (min-width:700px){
+  /* MENU RESPONSIVE */
+  .menu-dps ul{
+  background-color: #0081CF;
+  }
+  .menu-dps li{
+   float:left;
+  }
+  .menu-dps li a{
+   padding: 20px 30px;
+  }
+  .menu-dps .menu{
+   clear: none;
+   float: right;
+   max-height: none;
+  }
+  .menu-dps .menu-icon{
+   display: none;
+  }
+  .menu-dps ul a:hover{
+   background-color:bisque;
+ }
+ /* FIN MENU RESPONSIVE */
+ }
