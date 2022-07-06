@@ -1,7 +1,7 @@
 .contenido-pie {
   position: fixed;
   bottom: 0;
-  background-color: #0081cf;
+  background-color:  var(--main-color);
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/carousel.css">
     <link rel="stylesheet" href="CSS/skillbar.css" />
     <link rel="stylesheet" href="CSS/mediaQ.css" />
     <link rel="stylesheet" href="CSS/Form.css" />
@@ -16,17 +18,17 @@
   <body>
     <div class="content">
       <nav class="menu-dps">
-        <a href="index.html" class="logo">Portfolio</a>
+        <a href="#" class="logo">Portfolio</a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"
-          ><span class="nav-icon"></span
-        ></label>
+        <label class="menu-icon" for="menu-btn">
+          <span class="nav-icon"></span>
+        </label>
 
         <ul class="menu">
           <li><a href="#Carrousel">Carrousel</a></li>
           <li><a href="#Skills">Skills</a></li>
-          <li><a href="#form">Formulario</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#formulario">Formulario</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
         </ul>
       </nav>
       <header class="header">
@@ -39,7 +41,7 @@
       </header>
 
       <main class="content-main">
-        <section>
+        <section id="Carrousel">
           <div class="slides-carousel">
             <div class="slide" id="slide1">
               <img src="/Images/caro-1.jpg" alt="" />
@@ -66,7 +68,7 @@
           </div>
         </section>
 
-        <section class="contenedor-skills">
+        <section id="Skills" class="contenedor-skills">
           <div class="imgskcontainer">
             <div class="image-skill">
               <img src="Images/Html.svg" alt="logo-html" />
@@ -131,15 +133,14 @@
                 name="phone"
                 required
                 maxlength="9"
-                pattern="[0-9]"
-                required
+                pattern="(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}"
               />
             </div>
             <div class="fieldset">
               <fieldset>
                 <legend>Como me conociste</legend>
                 <div class="radiolabel">
-                  <input type="radio" name="radio" id="universidad" />
+                  <input type="radio" name="radio" id="universidad" required />
                   <label for="universidad" value="checked">Universidad</label>
                 </div>
                 <div class="radiolabel">
@@ -162,7 +163,6 @@
                 type="text"
                 id="Githubtag"
                 name="Githubtag"
-                required
                 pattern="^@[^\s]+"
               />
             </div>
@@ -179,6 +179,7 @@
           </form>
         </section>
       </main>
+
       <footer class="contenido-pie" id="redes">
         <div class="link1">
           <a class="link" href="https:/twitter.com" rel="noopener noreferrer"

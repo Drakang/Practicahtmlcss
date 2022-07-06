@@ -3,14 +3,13 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 5px;
-  padding-top: 30px;
-  height: 100%;
+  gap: 15px;
+  padding: 50px 0 30px;
 }
 
 .skillcss {
   width: 100%;
-  height: 15%;
+  height: 30px;
   position: relative;
   background: #555;
   border-radius: 250px;
@@ -45,28 +44,24 @@
 .textsk {
   position: absolute;
   width: 100%;
-  height: 100%;
   text-align: center;
   z-index: 2;
-  padding: 15px 0px;
+  padding: 5px 0px;
   font-size: 15px;
 }
-.image-skill {
-  width: 70px;
-  height: 70px;
-}
+
 .image-skill > img {
   width: 60px;
   height: 60px;
 }
+
 .imgskcontainer {
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 20%;
   align-items: center;
-  justify-content: space-evenly;
 }
+
 @keyframes prog {
   0% {
     width: 0%;
