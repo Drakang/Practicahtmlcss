@@ -1,11 +1,19 @@
 a {
   color: black;
 }
+body {
+  background-color: rgb(66, 69, 75);
+  min-width: 320px;
+}
 .content {
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+}
+
+.header {
+  padding-top: 60px;
 }
 
 .header img {
@@ -17,6 +25,7 @@ a {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
+  height: 60px;
   z-index: 3;
 }
 .menu-dps ul {
@@ -25,13 +34,16 @@ a {
   list-style: none;
   overflow: hidden;
   background-color: #fff;
+  width: 150px;
 }
+
 .menu-dps li a {
   display: block;
-  padding: 10px;
+  padding: 10px 20px;
   border-right: 1px solid #aaa;
   text-decoration: none;
 }
+
 .menu-dps .logo {
   float: left;
   display: block;
@@ -45,6 +57,7 @@ a {
   max-height: 0;
   transition: max-height 1s ease-out;
 }
+
 .menu-dps .menu-icon {
   padding: 28px 20px;
   position: relative;
@@ -52,6 +65,7 @@ a {
   cursor: pointer;
   user-select: none;
 }
+
 .menu-dps .menu-icon .nav-icon {
   background-color: #aaa;
   display: block;
@@ -60,6 +74,7 @@ a {
   position: relative;
   transition: background 0.1s ease-out;
 }
+
 .menu-dps .menu-icon .nav-icon:before {
   background: #333;
   content: "";
@@ -70,6 +85,7 @@ a {
   transition: all 0.1s ease-out;
   top: 5px;
 }
+
 .menu-dps .menu-icon .nav-icon:after {
   background: #333;
   content: "";
@@ -80,6 +96,7 @@ a {
   transition: all 0.1s ease-out;
   top: -5px;
 }
+
 .menu-dps .menu-btn {
   display: none;
 }
@@ -91,18 +108,15 @@ a {
 .menu-dps .menu-btn:checked ~ .menu-icon .nav-icon {
   background: transparent;
 }
+
 .menu-dps .menu-btn:checked ~ .menu-icon .nav-icon:before {
   transform: rotate(-45deg);
   top: 0;
 }
+
 .menu-dps .menu-btn:checked ~ .menu-icon .nav-icon:after {
   transform: rotate(45deg);
   top: 0;
-}
-.carousel-container {
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
-  margin-top: 5fr;
 }
 
 .links-carousel {
@@ -118,26 +132,25 @@ a {
   border-radius: 50%;
   margin: 5px;
 }
+
 .slides-carousel {
   width: 100vw;
   height: 30vh;
+  padding: 5px;
   overflow: hidden;
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.slides-carousel > div {
-  width: 100%;
-  background-color: rgb(68, 68, 68);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.slides-carousel img {
-  width: 100%;
-  overflow: hidden;
-}
-/*  */
 
+.slide {
+  height: 100%;
+  min-width: 100vw;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

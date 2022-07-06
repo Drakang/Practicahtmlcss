@@ -1,45 +1,54 @@
-@media (min-width:700px){
+@media (min-width: 700px) {
+  .content {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". navbar navbar ."
+      ". header header ."
+      ". carousel carousel ."
+      ". skillsbar skillsbar ."
+      ". form form ."
+      ". footer footer .";
+    width: 100%;
+    height: 100%;
+  }
   /* MENU RESPONSIVE */
-  .menu-dps ul{
-  background-color: #0081CF;
+  .menu-dps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .menu-dps li{
-   float:left;
+  .menu-dps ul {
+    display: flex;
+    align-items: center;
+    overflow: initial;
+    background-color: inherit;
+    width: fit-content;
   }
-  .menu-dps li a{
-   padding: 20px 30px;
+  .menu-dps .menu {
+    clear: none;
   }
-  .menu-dps .menu{
-   clear: none;
-   float: right;
-   max-height: none;
+  .menu-dps .menu-icon {
+    display: none;
   }
-  .menu-dps .menu-icon{
-   display: none;
+  .menu-dps ul a:hover {
+    background-color: rgb(6, 184, 255);
   }
-  .menu-dps ul a:hover{
-   background-color:rgb(6, 184, 255);
- }
- /* FIN MENU RESPONSIVE */
- .content{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 50px 20% 10% 10% 10% ;
-  gap: 5px;
+  /* FIN MENU RESPONSIVE */
+
+  .header {
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-trans {
+    width: 200px;
+    height: 200px;
+  }
+  .header .image-trans img {
+    max-width: 100%;
+    max-height: 50%;
+  }
 }
-
-
- .header{
-  grid-row:  2 / 3;
-  grid-column: 1 / 2 ;
- }
-
-.carousel-container{
-  grid-row:  3 / 4;
-  grid-column: 1 / 2 ;
-}
-.header img{
-  height: 300px;
-}
-
- }

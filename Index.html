@@ -7,22 +7,25 @@
     <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/main.css" />
-    <link rel="stylesheet" href="CSS/skillbar.css">
+    <link rel="stylesheet" href="CSS/skillbar.css" />
     <link rel="stylesheet" href="CSS/mediaQ.css" />
+    <link rel="stylesheet" href="CSS/Form.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <div class="content">
       <nav class="menu-dps">
-        <a href="index.html" class="logo">Portfolios</a>
+        <a href="index.html" class="logo">Portfolio</a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"
           ><span class="nav-icon"></span
         ></label>
+
         <ul class="menu">
-          <li><a href="#Aboutme">About me</a></li>
+          <li><a href="#Carrousel">Carrousel</a></li>
           <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Works">Works</a></li>
+          <li><a href="#form">Formulario</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
@@ -34,14 +37,25 @@
           </picture>
         </figure>
       </header>
+
       <main class="content-main">
-        <section class="carousel-container">
+        <section>
           <div class="slides-carousel">
-            <div id="slide1"><img src="/Images/caro-1.jpg" alt="" /></div>
-            <div id="slide2">Anouncement 2</div>
-            <div id="slide3">Anouncement 3</div>
-            <div id="slide4">Anouncement 4</div>
-            <div id="slide5">Anouncement 5</div>
+            <div class="slide" id="slide1">
+              <img src="/Images/caro-1.jpg" alt="" />
+            </div>
+            <div class="slide" id="slide2">
+              <img src="/Images/caro-1.jpg" alt="" />
+            </div>
+            <div class="slide" id="slide3">
+              <img src="/Images/caro-1.jpg" alt="" />
+            </div>
+            <div class="slide" id="slide4">
+              <img src="/Images/caro-1.jpg" alt="" />
+            </div>
+            <div class="slide" id="slide5">
+              <img src="/Images/caro-1.jpg" alt="" />
+            </div>
           </div>
           <div class="links-carousel">
             <a class="carouseldot" href="#slide1"></a>
@@ -51,7 +65,8 @@
             <a class="carouseldot" href="#slide5"></a>
           </div>
         </section>
-        <div class="contenedor-skills">
+
+        <section class="contenedor-skills">
           <div class="imgskcontainer">
             <div class="image-skill">
               <img src="Images/Html.svg" alt="logo-html" />
@@ -97,12 +112,90 @@
               <span class="gitsk"></span>
             </div>
           </div>
-
-         
-        
-        </div>
+        </section>
+        <section id="formulario" class="formulario">
+          <form action="/register" method="post">
+            <div>
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="surname">Apellidos</label>
+              <input type="text" id="surname" name="surname" required />
+            </div>
+            <div>
+              <label for="phone">Telefono</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                maxlength="9"
+                pattern="[0-9]"
+                required
+              />
+            </div>
+            <div class="fieldset">
+              <fieldset>
+                <legend>Como me conociste</legend>
+                <div class="radiolabel">
+                  <input type="radio" name="radio" id="universidad" />
+                  <label for="universidad" value="checked">Universidad</label>
+                </div>
+                <div class="radiolabel">
+                  <input type="radio" name="radio" id="Keepcoding" />
+                  <label for="Keepcoding" value="checked">Kick-Off</label>
+                </div>
+                <div class="radiolabel">
+                  <input type="radio" name="radio" id="Colegio" />
+                  <label for="Colegio" value="checked">Colegio</label>
+                </div>
+                <div class="radiolabel">
+                  <input type="radio" name="radio" id="Git" />
+                  <label for="Git" value="checked">GitHub</label>
+                </div>
+              </fieldset>
+            </div>
+            <div>
+              <label for="Githubtag">Tag de Github</label>
+              <input
+                type="text"
+                id="Githubtag"
+                name="Githubtag"
+                required
+                pattern="^@[^\s]+"
+              />
+            </div>
+            <div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                maxlength="180"
+              ></textarea>
+            </div>
+            <input type="submit" id="submit" value="Guardar" />
+          </form>
+        </section>
       </main>
-      <footer></footer>
+      <footer class="contenido-pie" id="redes">
+        <div class="link1">
+          <a class="link" href="https:/twitter.com" rel="noopener noreferrer"
+            ><img src="/Images/LogosTwitter.svg" alt="logo-twitter"
+          /></a>
+        </div>
+        <div class="link2">
+          <a class="link" href="https://github.com" rel="noopener noreferrer"
+            ><img src="/Images/LogosGithubIcon.svg" alt="logo-github"
+          /></a>
+        </div>
+        <div class="link3">
+          <a class="link" href="https://facebook.com" rel="noopener noreferrer"
+            ><img src="/Images/LogosFacebook.svg" alt="logo-facebook"
+          /></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

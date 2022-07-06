@@ -6,73 +6,72 @@
   gap: 5px;
   padding-top: 30px;
   height: 100%;
+}
+
+.skillcss {
+  width: 100%;
+  height: 15%;
+  position: relative;
+  background: #555;
+  border-radius: 250px;
+  padding: 3px;
+}
+.htmlsk {
+  width: 70%;
+}
+.csssk {
+  width: 60%;
+}
+.javask {
+  width: 90%;
+}
+.reactsk {
+  width: 20%;
+}
+.gitsk {
+  width: 40%;
+}
+
+.skillcss > span {
+  display: block;
+  height: 100%;
+  border-radius: 250px;
+  background-color: #22aa11;
+  position: relative;
+  overflow: hidden;
+  animation: prog 2s linear;
+  text-align: center;
+}
+.textsk {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 2;
+  padding: 15px 0px;
+  font-size: 15px;
+}
+.image-skill {
+  width: 70px;
+  height: 70px;
+}
+.image-skill > img {
+  width: 60px;
+  height: 60px;
+}
+.imgskcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 20%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@keyframes prog {
+  0% {
+    width: 0%;
   }
-  
-  .skillcss {
+  60% {
     width: 100%;
-    height: 25%;
-    position: relative;
-    background: #555;
-    border-radius: 250px;
-    padding: 3px;
   }
-  .htmlsk{
-    width: 70%;
-  }
-  .csssk {
-    width: 60%;
-  }
-  .javask{
-    width: 90%;
-  }
-  .reactsk{
-    width: 20%;
-  }
-  .gitsk{
-    width: 40%;
-  }
-  
-  .skillcss > span {
-    display: block;
-    height: 100%;
-    border-radius: 250px;
-    background-color: #22aa11;
-    position: relative;
-    overflow: hidden;
-    animation: prog 2s linear;
-    text-align: center;
-  }
-  .textsk {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    z-index: 3;
-    padding: 2px 0px;
-    font-size: 15px;
-  }
-  .image-skill{
-    width: 50px;
-    height: 50px;
-  }
-  .image-skill > img{
-    width: 50px;
-    height: 50px;
-  }
-  .imgskcontainer{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 30%;
-    align-items: center;
-    gap: 5px;
-  }
-  @keyframes prog {
-    0% {
-      width: 0%;
-    }
-    60% {
-      width: 100%;
-    }
-  }
-  
+}

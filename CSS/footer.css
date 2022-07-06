@@ -1,0 +1,27 @@
+.contenido-pie {
+  position: fixed;
+  bottom: 0;
+  background-color: #0081cf;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  z-index: 4;
+}
+
+.contenido-pie img {
+  padding: 2px;
+  background-color: white;
+  border-radius: 25%;
+}
+.contenido-pie .link1 {
+  margin-top: 5px;
+  height: 36px;
+}
+.contenido-pie .link2 {
+  margin-top: 5px;
+}
+.contenido-pie .link3 {
+  margin-top: 5px;
+}
