@@ -25,7 +25,7 @@ form input[type="radio"] {
   width: initial;
 }
 
-form button {
+.guardar {
   display: block;
   background-color: #0081cf;
   padding: 10px 45px 10px 45px;
@@ -33,8 +33,9 @@ form button {
   font-size: 1em;
   color: white;
 }
-form button:hover {
-  background-color: #046193;
+.guardar:hover {
+  background-color: #fcfcfc;
+  color: black;
 }
 
 textarea {
