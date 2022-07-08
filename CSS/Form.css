@@ -16,6 +16,9 @@ form textarea {
   font-size: 1em;
   resize: none;
 }
+form label {
+  line-height: 200%;
+}
 
 form input[type="radio"] {
   margin: 0;
