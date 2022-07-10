@@ -18,7 +18,7 @@
 1. Un video adaptado a los distintos tipos de pantalla.
 2. Una sección con proyectos.
 ---
-### Aquí adjunto algunas fotos de las distintas web y un [enlace]https://drakang.github.io/Practicahtmlcss/ de la misma.
+### Aquí adjunto algunas fotos de las distintas web y un [enlace](https://drakang.github.io/Practicahtmlcss/) de la misma.
 
 ![image](https://user-images.githubusercontent.com/103906418/178150532-d544cf23-7af0-43c5-aaaa-709a180ac00b.png)
 ---
