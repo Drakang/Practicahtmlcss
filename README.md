@@ -14,9 +14,9 @@
 5. Una sección con un  formulario de contacto.
 6. Un footer con enlaces a distintas redes sociales
 ---
-## #Web de proyectos.
+### Web de proyectos.
 1 .Un video adaptado a los distintos tipos de pantalla.
-2. Una sección con “proyectos”.
+2. Una sección con proyectos.
 ---
 ### Aquí adjunto algunas fotos de las distintas web y un enlace [pages]https://drakang.github.io/Practicahtmlcss/ de la misma.
 
